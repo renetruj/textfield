@@ -1,0 +1,48 @@
+
+  html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  font-size:18px;
+}
+
+.demo-headline {
+  margin-bottom: 32px;
+}
+.mdc-text-field__input  {
+  padding: 26px 16px 10px;
+   height: 100%;
+   background-color: #FFFFFF;
+   border:1px solid #ccc;
+   border-radius: 4px 4px 0px 0px;
+ }
+
+.mdc-text-field {
+  margin-bottom: 24px;
+  flex-shrink: 0;
+  height:66px;
+  border-radius: 0;
+
+}
+
+
+.greet-message {
+  margin-top: 48px;
+}
+
+
+/* .mdc-floating-label--float-above,.mdc-text-field__input:-webkit-autofill+.mdc-floating-label {
+    -webkit-transform: translateY(-50%) scale(0.875);
+    transform: translateY(-50%) scale(0.875);
+
+}
+
+.mdc-text-field.mdc-ripple-upgraded.mdc-text-field--focused.mdc-ripple-upgraded--background-focused{
+
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label,.mdc-text-field .mdc-text-field__input,.mdc-ripple-upgraded.mdc-text-field--focused.mdc-ripple-upgraded--foreground-activation {
+  color: #cd117b;
+} */
