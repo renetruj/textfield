@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration</title>
+  <!-- <link rel="shortcut icon" href="https://material.io/favicon.ico"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!-- <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> -->
+            <link rel="stylesheet" href="material.css">
+      <!-- original <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> -->
+      <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+<!--
+  <div class="demo-grid mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
+                <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-10-tablet">
+  <h2>Create Your Ambetter Account</h2>
+                  <h3>Personal Information</h3>
+                    <div class="text-field-container">
+                     <div class="mdc-text-field">
+                      <input type="text" id="name" class="mdc-text-field__input">
+                      <label class="mdc-floating-label" for="name">Name</label>
+                      <div class="mdc-line-ripple"></div>
+
+                    </div>
+                    </div>
+
+
+
+
+                    <div class="text-field-container">
+                    <div class="mdc-text-field dob">
+                      <input  id="dob" class="mdc-text-field__input" type="date">
+                      <label class="mdc-floating-label" for="dob">Date of Birth</label>
+                      <div class="mdc-line-ripple"></div>
+                        </div>
+                      <div class="mdc-text-field-helper-line">
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="text-field-filled-helper-text">mm/dd/yyyy</p>
+
+                    </div>
+                    </div>
+                    <div class="text-field-container">
+                    <div class="mdc-text-field password">
+                    <input type="text" id="mbrid" class="mdc-text-field__input" >
+                    <label class="mdc-floating-label" for="mbrid">Member ID</label>
+                    <div class="mdc-line-ripple"></div>
+                    </div>
+                    <div class="mdc-text-field-helper-line">
+                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="text-field-filled-helper-text">Sample: U1234567890</p>
+                    </div>
+                  </div>
+
+                  <div class="text-field-container">
+                  <div class="mdc-select">
+                   <input type="hidden" name="enhanced-select">
+                    <i class="mdc-select__dropdown-icon"></i>
+                    <div class="mdc-select__selected-text"></div>
+                    <div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
+                      <ul class="mdc-list">
+
+                        <li class="mdc-list-item" data-value="grains">
+                          Arizona
+                        </li>
+                        <li class="mdc-list-item" data-value="vegetables">
+                          Florida
+                        </li>
+                        <li class="mdc-list-item" data-value="fruit">
+                          Texas
+                        </li>
+                        <li class="mdc-list-item" data-value="fruit">
+                          Not Listed
+                        </li>
+                      </ul>
+                    </div>
+                    <span class="mdc-floating-label">State</span>
+                    <div class="mdc-line-ripple"></div>
+                  </div>
+                  </div>
+
+                  <h3>Health Interests</h3>
+                  Let's customize your experience. Tell us about what you are most interested in for your medical and health journey.
+                  <div class="text-field-container">
+                    <ul class="mdc-list" role="group" aria-label="List with checkbox items">
+                      <li class="mdc-list-item" role="checkbox" aria-checked="false">
+                        <span class="mdc-list-item__graphic">
+                          <div class="mdc-checkbox">
+                            <input type="checkbox"
+                                    class="mdc-checkbox__native-control"
+                                    id="demo-list-checkbox-item-1"  />
+                            <div class="mdc-checkbox__background">
+                              <svg class="mdc-checkbox__checkmark"
+                                    viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path"
+                                      fill="none"
+                                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                              </svg>
+                              <div class="mdc-checkbox__mixedmark"></div>
+                            </div>
+                          </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-1">Improve physical health</label>
+                      </li>
+                      <li class="mdc-list-item" role="checkbox" aria-checked="false" tabindex="0">
+                        <span class="mdc-list-item__graphic">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                        class="mdc-checkbox__native-control"
+                                        id="demo-list-checkbox-item-2" name="demo-list-checkbox-item-2"
+                                         />
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                        viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-2">Learn about free benefits</label>
+                      </li>
+                      <li class="mdc-list-item" role="checkbox" aria-checked="false">
+                        <span class="mdc-list-item__graphic">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                        class="mdc-checkbox__native-control"
+                                        id="demo-list-checkbox-item-3" name="demo-list-checkbox-item-3"  />
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                        viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-3">Virtual care</label>
+                      </li>
+                      <li class="mdc-list-item" role="checkbox" aria-checked="true" tabindex="0">
+                        <span class="mdc-list-item__graphic">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                        class="mdc-checkbox__native-control"
+                                        id="demo-list-checkbox-item-2"
+                                         />
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                        viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-2">Quick view of medical spending</label>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <h3>Account Information</h3>
+                  <div class="text-field-container">
+                   <div class="mdc-text-field">
+                    <input type="email" id="my-text-field" class="mdc-text-field__input">
+                    <label class="mdc-floating-label" for="my-text-field">Email Address</label>
+                    <div class="mdc-line-ripple"></div>
+
+                  </div>
+                  </div>
+
+                  <div class="text-field-container">
+                    <div class="mdc-text-field text-field mdc-ripple-upgraded" >
+                      <input  id="password" class="mdc-text-field__input" type="password" aria-describedby="text-field-filled-helper-text" minlength="8">
+                      <label class="mdc-floating-label" for="password">Create Password</label>
+                      <div class="mdc-line-ripple"></div>
+                    </div>
+
+
+
+
+                    <div class="mdc-text-field-helper-line">
+                      <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="text-field-filled-helper-text">At least 8 characters</p>
+                    </div>
+                    <ul class="mdc-list" role="group" aria-label="List with checkbox items">
+                    <li class="mdc-list-item" role="checkbox" aria-checked="false" tabindex="0">
+                    <span class="mdc-list-item__graphic">
+                        <div class="mdc-checkbox">
+                            <input type="checkbox" id="togglePassword" class="mdc-checkbox__native-control"/>
+                            <div class="mdc-checkbox__background">
+                              <svg class="mdc-checkbox__checkmark"
+                                    viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path"
+                                      fill="none"
+                                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                              </svg>
+                              <div class="mdc-checkbox__mixedmark"></div>
+                            </div>
+                          </div>
+                    </span>
+                    <label class="mdc-list-item__text" for="togglePassword"><small>Show Password</small></label>
+                  </li>
+                </ul>
+                  </div>
+
+
+                  <button class="mdc-button mdc-button--unelevated">Create Account</button>
+
+                </div>
+                <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
+              </div>
+            </div>
+
+ -->
+
+
+
+
+
+
+ <div class="demo-grid mdc-layout-grid">
+             <div class="mdc-layout-grid__inner">
+               <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
+               <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-10-tablet">
+<h3>Standard Input fields</h3>
+  <form id="standard-field">
+    <div class="input-container">
+    <label>Name</label>
+    <input type="text" name="Input"  />
+</div>
+<div class="input-container">
+    <label for="dob">Date of Birth</label>
+    <input type="date" name="dob"  />
+    <small>mm/dd/yyyy</small>
+</div>
+<div class="input-container">
+    <label for="mbrid">Member ID</label>
+    <input type="text" name="mbrid"  />
+    <small>Sample: U12345678-98</small>
+</div>
+<div class="input-container">
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+</div>
+
+
+                  <h3>Health Interests</h3>
+                  Let's customize your experience. Tell us about what you are most interested in for your medical and health journey.
+                  <div class="text-field-container">
+                    <ul class="mdc-list" role="group" aria-label="List with checkbox items">
+                      <li class="mdc-list-item" role="checkbox" aria-checked="false">
+                        <span class="mdc-list-item__graphic">
+                          <div class="mdc-checkbox">
+                            <input type="checkbox"
+                                    class="mdc-checkbox__native-control"
+                                    id="demo-list-checkbox-item-1"  />
+                            <div class="mdc-checkbox__background">
+                              <svg class="mdc-checkbox__checkmark"
+                                    viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path"
+                                      fill="none"
+                                      d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                              </svg>
+                              <div class="mdc-checkbox__mixedmark"></div>
+                            </div>
+                          </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-1">Improve physical health</label>
+                      </li>
+                      <li class="mdc-list-item" role="checkbox" aria-checked="false" tabindex="0">
+                        <span class="mdc-list-item__graphic">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                        class="mdc-checkbox__native-control"
+                                        id="demo-list-checkbox-item-2" name="demo-list-checkbox-item-2"
+                                         />
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                        viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-2">Learn about free benefits</label>
+                      </li>
+                      <li class="mdc-list-item" role="checkbox" aria-checked="false">
+                        <span class="mdc-list-item__graphic">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                        class="mdc-checkbox__native-control"
+                                        id="demo-list-checkbox-item-3" name="demo-list-checkbox-item-3"  />
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                        viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-3">Virtual care</label>
+                      </li>
+                      <li class="mdc-list-item" role="checkbox" aria-checked="true" tabindex="0">
+                        <span class="mdc-list-item__graphic">
+                            <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                        class="mdc-checkbox__native-control"
+                                        id="demo-list-checkbox-item-2"
+                                         />
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                        viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                        </span>
+                        <label class="mdc-list-item__text" for="demo-list-checkbox-item-2">Quick view of medical spending</label>
+                      </li>
+                    </ul>
+                  </div>
+<div class="input-container">
+    <label for="password">Email</label>
+    <input type="email" name="password"  />
+
+    </div>
+
+<div class="input-container">
+    <label for="password">Password</label>
+    <input type="password" name="password" minlength="8"  />
+    <small>At least 8 characters</small>
+    </div>
+
+  </form>
+</div>
+<div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
+</div>
+</div>
+<!-- Required MDC Web JavaScript library -->
+
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+<!-- Instantiate single textfield component rendered in the document -->
+
+<script>
+
+const togglePassword = document.getElementById('togglePassword');
+
+const showOrHidePassword = () => {
+  const password = document.getElementById('password');
+  if (password.type === 'password') {
+    password.type = 'text';
+  } else {
+    password.type = 'password';
+  }
+};
+
+togglePassword.addEventListener('change', showOrHidePassword);
+
+</script>
+
+<script>
+// init selects
+[].forEach.call(document.querySelectorAll('.mdc-select'), function(el) {
+const select = new mdc.select.MDCSelect(el);
+});
+
+// init textfields
+[].forEach.call(document.querySelectorAll('.mdc-text-field'), function(el) {
+const textField = new mdc.textField.MDCTextField(el);
+});
+
+// init checkbox
+  mdc.checkbox.MDCCheckbox.attachTo(document.querySelector('.mdc-checkbox'));
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
