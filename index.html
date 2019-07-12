@@ -8,7 +8,7 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+      <!-- <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> -->
             <link rel="stylesheet" href="material.css">
       <!-- original <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"> -->
       <link rel="stylesheet" href="styles.css">
@@ -26,8 +26,8 @@
                   <h3>Personal Information</h3>
                     <div class="text-field-container">
                      <div class="mdc-text-field">
-                      <input type="text" id="my-text-field" class="mdc-text-field__input">
-                      <label class="mdc-floating-label" for="my-text-field">Name</label>
+                      <input type="text" id="name" class="mdc-text-field__input">
+                      <label class="mdc-floating-label" for="name">Name</label>
                       <div class="mdc-line-ripple"></div>
 
                     </div>
@@ -38,8 +38,8 @@
 
                     <div class="text-field-container">
                     <div class="mdc-text-field dob">
-                      <input type="text" id="my-text-field" class="mdc-text-field__input" type="date">
-                      <label class="mdc-floating-label" for="my-text-field">Date of Birth</label>
+                      <input  id="dob" class="mdc-text-field__input" type="date">
+                      <label class="mdc-floating-label" for="dob">Date of Birth</label>
                       <div class="mdc-line-ripple"></div>
                         </div>
                       <div class="mdc-text-field-helper-line">
@@ -49,8 +49,8 @@
                     </div>
                     <div class="text-field-container">
                     <div class="mdc-text-field password">
-                    <input type="text" id="my-text-field" class="mdc-text-field__input" type="password">
-                    <label class="mdc-floating-label" for="my-text-field">Member ID</label>
+                    <input type="text" id="mbrid" class="mdc-text-field__input" >
+                    <label class="mdc-floating-label" for="mbrid">Member ID</label>
                     <div class="mdc-line-ripple"></div>
                     </div>
                     <div class="mdc-text-field-helper-line">
@@ -114,7 +114,7 @@
                             <div class="mdc-checkbox">
                                 <input type="checkbox"
                                         class="mdc-checkbox__native-control"
-                                        id="demo-list-checkbox-item-2"
+                                        id="demo-list-checkbox-item-2" name="demo-list-checkbox-item-2"
                                          />
                                 <div class="mdc-checkbox__background">
                                   <svg class="mdc-checkbox__checkmark"
@@ -134,7 +134,7 @@
                             <div class="mdc-checkbox">
                                 <input type="checkbox"
                                         class="mdc-checkbox__native-control"
-                                        id="demo-list-checkbox-item-3" />
+                                        id="demo-list-checkbox-item-3" name="demo-list-checkbox-item-3"  />
                                 <div class="mdc-checkbox__background">
                                   <svg class="mdc-checkbox__checkmark"
                                         viewBox="0 0 24 24">
