@@ -13,11 +13,9 @@ h3 {margin-top:2rem;}
 form#standard-field label {
   font-size: 1rem;
   color:#6e6e6e;
-
-
-  /* text-transform: uppercase; */
-
 }
+form#standard-field input[type="date" i] {font-weight: Roboto, sans-serif;}
+
 .mdc-checkbox::before, .mdc-checkbox::after,.mdc-checkbox__native-control:enabled:checked ~ .mdc-checkbox__background {
     background-color: #cb117d;
     border-color: #cb117d;
@@ -36,6 +34,7 @@ form#standard-field input {
   background: #ffffff;
   box-sizing: border-box;
   outline: none;
+  width:100%;
   /* border-bottom:1px solid #333; */
 
 }
