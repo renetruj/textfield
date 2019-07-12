@@ -7540,7 +7540,7 @@ a.mdc-list-item {
   left: 16px;
   /* @noflip */
   right: initial;
-  top: 18px;
+  top: 22px;
   pointer-events: none;
 }
 [dir=rtl] .mdc-text-field .mdc-floating-label, .mdc-text-field .mdc-floating-label[dir=rtl] {
