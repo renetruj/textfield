@@ -2573,8 +2573,8 @@ svg.mdc-button__icon {
 }
 
 .mdc-floating-label--float-above {
-  -webkit-transform: translateY(-50%) scale(0.875);
-          transform: translateY(-50%) scale(0.875);
+  -webkit-transform: translateY(-10%) scale(0.875);
+          transform: translateY(-10%) scale(0.875);
 }
 
 .mdc-floating-label--shake {
