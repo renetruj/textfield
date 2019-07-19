@@ -7,18 +7,33 @@ html, body {
   font-size: 18px;
   font-family: Roboto, sans-serif;
 }
+@font-face {
+  font-family: 'password';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/password.ttf);
+}
+
+input.ssn {
+  font-family: 'password';
+
+}
 
 h3 {
   margin-top: 2rem;
 }
 span {font-size: 1rem;}
+
 .standard-field label {
   font-size: 1rem;
   color: #000;
   /* font-weight: bold; */
+  color: #6e6e6e;
+
 }
 
 input[type=date] {font-family: Roboto, sans-serif !important;}
+input[type=date] {font-family: Roboto, sans-serif !important;height:48px;}
 .standard-field {
   margin-top: 1.4rem;
 }
@@ -32,17 +47,25 @@ input[type=date] {font-family: Roboto, sans-serif !important;}
   padding: 12px;
   margin: 8px 0 4px 0;
   color: #333;
+  color: #000;
   display: block;
   font-size: 1rem;
   min-height: 20px;
   border-radius: 4px;
   border: 1px solid #adadad;
+  border-radius: 8px;
+  border: 1px solid #ccc;
   -webkit-transition: .2s;
   transition: .2s;
   background: #ffffff;
   box-sizing: border-box;
   outline: none;
   width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  /* font-weight: bold; */
   /* border-bottom:1px solid #333; */
 }
 
@@ -76,6 +99,7 @@ input[type=date] {font-family: Roboto, sans-serif !important;}
 
 small {
   color: #6e6e6e;
+
   font-size: .875rem;
   font-weight: normal;
 }
@@ -87,10 +111,13 @@ small {
 
 .mdc-text-field__input {
   padding: 26px 16px 10px;
+  padding: 26px 16px 8px;
   height: 100%;
   background-color: #FFFFFF;
   border: 1px solid #ccc;
   border-radius: 4px 4px 0px 0px;
+
+
 }
 
 .mdc-text-field {
@@ -100,6 +127,15 @@ small {
   border-radius: 0;
 }
 
+
+/* CUSTOM Modify label float position line 7538 in material.css*/
+.mdc-text-field .mdc-floating-label, .standard-field label, small {
+
+
+color: #525252;
+}
+
+
 /* CUSTOM Modify label float position line 7538 in material.css*/
 .mdc-text-field .mdc-floating-label {
   /* @noflip */
@@ -108,6 +144,7 @@ small {
   right: initial;
   top: 24px;
   pointer-events: none;
+    /* font-weight: bold; */
 }
 
 .mdc-floating-label--float-above {
@@ -191,6 +228,15 @@ small {
   font-size: 1rem;
   text-transform: none;
   font-weight: bold;
+  width:100%;
+  min-height: 48px;
+  letter-spacing: -.009rem;
+}
+.mdc-text-field--invalid .mdc-text-field__input
+{
+  border:1px solid #b00020;
+    border-bottom:2px solid #b00020;
+  background-color: #fff9fa;
 }
 
 /* select styles */
@@ -205,8 +251,15 @@ select {
   outline: 0;
   box-shadow: none;
   border: 0 !important;
+
   background: #ddd;
   background-image: none;
+
+  background: #fff;
+  background-color: #fff;
+  border: 1px solid #ccc !important;
+
+  padding:.875rem;
 }
 /* Remove IE arrow */
 select::-ms-expand {
@@ -220,6 +273,7 @@ select::-ms-expand {
   height: 3em;
   line-height: 3;
   background: #999;
+  background: #fff;
   overflow: hidden;
   border-radius: .25em;
 }
@@ -315,6 +369,7 @@ font-size: .6rem;
 @media screen and (max-width: 960px) {
   html {
     font-size: 18px ;
+    font-size: 16px ;
   }
 
 }
