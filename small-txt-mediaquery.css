@@ -5,4 +5,21 @@
   html  {
     font-size: 18px !important;
   }
+  small { font-size: 16px !important;}
+  /* mobile headers */
+
+  p {margin-bottom:16px;}
+  h1.jumbo {font-size: 36px !important; line-height: 48px !important; }
+  h1, h1.jumbo {font-size: 29px !important; line-height: 48px !important;  }
+  h2 {font-size: 26px !important; line-height: 44px !important;  }
+  h3 {font-size: 23px !important; line-height: 36px !important;  }
+  h4 {font-size: 20px !important; line-height: 32px !important;  }
+  h5 {font-size: 18px !important; line-height: 28px !important;  }
+  p.lg-subtitle {font-size: 20px !important; line-height: 32px !important;  }
+  p {font-size: 18px !important; line-height: 28px !important;  }
+  p.sm-body {font-size: 16px !important; line-height: 24px !important;  }
+
+
+
+
 }
