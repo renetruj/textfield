@@ -24,6 +24,9 @@
                 <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
                 <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-10-tablet">
                   <img src="https://www.ambetterhealth.com/content/dam/centene/Centene%20Corporate/web-images/ambetter/logo.png" alt="ambetter" width="60%" />
+  <!-- <h1 style="font-size:32px !important; line-height:48px !important;">Create Your Account</h1> -->
+  <h1>Create Your Account</h1>
+                  <h2>Personal Information</h2>
 
   <h2>Create Your Account</h2>
                   <h3>Personal Information</h3>
@@ -31,6 +34,7 @@
                      <div class="mdc-text-field">
                       <input type="text" id="name" class="mdc-text-field__input">
                       <label class="mdc-floating-label" for="name">Name</label>
+                      <label class="mdc-floating-label" for="name">First Name</label>
                       <div class="mdc-line-ripple"></div>
 
                     </div>
@@ -53,6 +57,7 @@
                     <div class="text-field-container">
                     <div class="mdc-text-field password">
                     <input type="tel" maxlength="4" id="mbrid" class="mdc-text-field__input" >
+                    <input type="tel" maxlength="4" id="mbrid" class="mdc-text-field__input ssn" >
                     <label class="mdc-floating-label" for="mbrid">Last 4 of SSN</label>
                     <div class="mdc-line-ripple"></div>
                     </div>
@@ -63,6 +68,7 @@
 
                   <div class="text-field-container">
                   <div class="mdc-select">
+                  <div class="mdc-select" tabindex="0">
                     <!-- <input type="hidden" name="enhanced-select"> -->
                     <i class="mdc-select__dropdown-icon"></i>
                     <div class="mdc-select__selected-text"></div>
@@ -70,6 +76,9 @@
                       <ul class="mdc-list">
                         <!-- <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">
                         </li> -->
+                        <li class="mdc-list-item" data-value="fruit">
+                          Not Listed
+                        </li>
                         <li class="mdc-list-item" data-value="grains">
                           Arizona
                         </li>
@@ -176,6 +185,8 @@
 
                   <h3>Account Information</h3>
                   <form action="confirmation.html">
+                  <h2>Account Information</h2>
+                  <!-- <form action="confirmation.html"> -->
                   <div class="text-field-container">
                    <div class="mdc-text-field">
                     <input type="email" id="my-text-field" class="mdc-text-field__input">
@@ -185,20 +196,38 @@
                   </div>
                   </div>
 
+                                      <div class="text-field-container">
+                                      <div class="mdc-text-field dob">
+                                        <input  id="dob" class="mdc-text-field__input" type="date">
+                                        <label class="mdc-floating-label" for="dob">Today's Date</label>
+                                        <div class="mdc-line-ripple"></div>
+                                          </div>
+                                        <div class="mdc-text-field-helper-line">
+                                          <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="text-field-filled-helper-text">mm/dd/yyyy</p>
+
+                                      </div>
+                                      </div>
+
                   <div class="text-field-container">
                     <div class="mdc-text-field text-field mdc-ripple-upgraded" >
+
+                    <h4>Once you have completed all the form elements please click the <font color="green">green "success"</font> button below.</h4>
+                    <!-- <div class="mdc-text-field text-field mdc-ripple-upgraded" >
                       <input type="password" class="mdc-text-field__input" id="txt" name="password" minlength="8"  onkeyup="manage(this)" />
 
                       <label class="mdc-floating-label" for="password">Create Password</label>
                       <div class="mdc-line-ripple"></div>
+                      <div class="mdc-line-ripple"></div> -->
                     </div>
 
 
 
 
+<!--
                     <div class="mdc-text-field-helper-line">
                       <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="text-field-filled-helper-text">At least 8 characters</p>
                     </div>
+                    </div> -->
                     <!-- <ul class="mdc-list" role="group" aria-label="List with checkbox items">
                     <li class="mdc-list-item" role="checkbox" aria-checked="false" tabindex="0">
                     <span class="mdc-list-item__graphic">
@@ -220,11 +249,14 @@
                 </ul> -->
                   </div>
 
+<!--
 <br />
                   <button class="mdc-button mdc-button--unelevated" id="btSubmit" disabled>Create Account</button>
+                  <button class="mdc-button mdc-button--unelevated" id="btSubmit" disabled>Create Account</button> -->
 
                 </div>
                 </form>
+                <!-- </form> -->
                 <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
               </div>
             </div>
