@@ -23,34 +23,31 @@
 
   <div class="demo-grid mdc-layout-grid">
     <div class="mdc-layout-grid__inner">
-      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-layout-grid__cell--span-1-tablet"></div>
-      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-8 mdc-layout-grid__cell--span-10-tablet">
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-10-tablet">
 <img src="https://www.ambetterhealth.com/content/dam/centene/Centene%20Corporate/web-images/ambetter/logo.png" alt="ambetter" width="60%"/>
         <h2>Create Your Account</h2>
 
         <h3>Personal Information</h3>
         <div class="text-field-container standard-field">
-          <label>Name</label>
+          <label>First Name</label>
           <input type="text" name="Input" />
         </div>
-        <div class="text-field-container standard-field">
-          <label for="dob">Date of Birth</label>
-          <input type="date" name="dob" />
-          <small>mm/dd/yyyy</small>
-        </div>
+
         <div class="text-field-container standard-field">
           <label for="mbrid">Last 4 of SSN</label>
-          <input type="tel" maxlength="4" name="mbrid" />
+          <input type="tel" maxlength="4" name="mbrid" class="ssn" />
           <small>Sample: xxx-xx-1234</small>
         </div>
         <div class="text-field-container standard-field select">
           <!-- <label>State</label><br /> -->
-          <select>
+          <select tabindex="0">
                 <option selected disabled>Your State</option>
+                            <option value="audi">Not Listed</option>
             <option value="volvo">Arizona</option>
             <option value="saab">Florida</option>
             <option value="opel">Texas</option>
-            <option value="audi">Not Listed</option>
+
           </select>
         </div>
         <!-- <h3>Health Interests</h3>
@@ -118,16 +115,22 @@
         <h3>Account Information</h3>
 <form action="confirmation.html">
         <div class="text-field-container standard-field">
-          <label for="email">Email</label>
+          <label for="email">Email Address</label>
           <input type="email" name="email" />
         </div>
-        <div class="text-field-container standard-field nomargin">
+        <div class="text-field-container standard-field">
+          <label for="dob">Today's Date</label>
+          <input type="date" name="dob" class="date" value="mm/dd/yyyy" placeholder="dsf" />
+          <small>mm/dd/yyyy</small>
+        </div>
+        <h4>Once you have completed all the form elements please click the <font color="green">green "success"</font> button below.</h4>
+        <!-- <div class="text-field-container standard-field nomargin">
           <label for="password">Password</label>
           <input type="password" id="txt" name="password" minlength="8" onkeyup="manage(this)" />
-          <small>At least 8 characters</small>
+          <small>At least 8 characters</small> -->
 </div>
-
-<div class="text-field-container">
+<!--
+<div class="text-field-container"> -->
 
 <!--
           <ul class="mdc-list" role="group" aria-label="List with checkbox items">
@@ -147,15 +150,15 @@
             </li>
           </ul> -->
 
-<br />
+<!-- <br />
       <button  type="submit" class="mdc-button mdc-button--unelevated" id="btSubmit" disabled>Create Account</button>
 
-        </div>
+        </div> -->
           </form>
 
 
       </div>
-      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-2 mdc-layout-grid__cell--span-1-tablet"></div>
+      <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-1-tablet"></div>
     </div>
   </div>
 
